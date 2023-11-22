@@ -1,0 +1,114 @@
+body{
+    margin: 0;
+    background-color: rgb(7, 7, 7);
+    background-image: url(bckg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.container-main{
+    display: flex;
+       align-items: center;
+       justify-content: center;
+}
+.main{
+    border: 3px solid white;
+    margin: 5px 300px;
+    padding-bottom: 50px;
+    background-color: rgba(53, 47, 47, 0.2);
+}
+.heading{
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 55px;
+    color: black;
+    font-weight: 700;
+}
+.input-container{
+    margin-top: 30px;
+}
+.first-container{
+      display: grid;
+      grid-template-columns: repeat(3,3fr);
+}
+.first-container input{
+             cursor: pointer;
+             text-align: center;
+             font-size: 38px;
+             font-weight: 700;
+             width: 50px;
+             height: 70px;
+             color: #fff;
+             background-color: rgba(255,255,255,.2);
+             border: none;
+             outline: none;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+@keyframes glow {
+    from {
+      text-shadow: 0 0 2px #fff, 0 0 4px #fff, 0 0 6px #e60073, 0 0 8px #e60073, 0 0 10px #e60073, 0 0 12px #e60073, 0 0 14px #e60073;
+    }
+    to {
+      text-shadow: 0 0 6px #fff, 0 0 8px #ff4da6, 0 0 10px #ff4da6, 0 0 12px #ff4da6, 0 0 14px #ff4da6, 0 0 16px #ff4da6, 0 0 18px #ff4da6;
+    }
+  }
+.win p{
+    color: rgb(255, 255, 255);
+    font-size: 40px;
+             
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
+}
+#inp1{
+    border-right: 2px solid black;
+    border-bottom: 2px solid black;
+}
+#inp2{
+    border-bottom: 2px solid black;
+    border-right: 2px solid black;
+}
+#inp3{
+    border-bottom: 2px solid black;
+}
+#inp4{
+    border-right: 2px solid black;
+    border-bottom: 2px solid black;
+}
+#inp5{
+    border-bottom: 2px solid black;
+    border-right: 2px solid black;
+}
+#inp6{
+    border-bottom: 2px solid black;
+}
+#inp7{
+    border-right: 2px solid black;
+}
+#inp8{
+    border-right: 2px solid black;
+}
+.reload button{
+    width: 100px;
+    height: 50px;
+    font-size: 22px;
+    font-weight: 700;
+    color: #dbd4d7;
+    background-color: #ff4da6;
+    text-decoration: none;
+    cursor: pointer;
+    transition: transform 0.5s;
+}
+.reload button:hover{
+   transform: translateY(-5px);
+}
+
+@media only screen and (max-width: 800px) {
+    .main {
+       margin: 2px 16px;
+       padding-bottom: 5px;
+    }
+  }
