@@ -108,7 +108,7 @@ body{
 
 @media only screen and (max-width: 800px) {
     .main {
-        margin: 200px 16px;
+        margin: 80px 16px;
         margin-top: 22px;
         padding-bottom: 35px;
     }
